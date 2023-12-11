@@ -1,0 +1,62 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px ;
+}
+.icon-nav {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Hiển thị trên màn hình máy tính */
+@media (min-width: 740px) {
+    .nav-mobile, .search-bar, .menu-icon {
+      display: none;
+    }
+    
+    .nav-header {
+      display: flex;
+    }
+  }
+  
+  /* Hiển thị trên màn hình điện thoại */
+  @media (max-width: 740px) {
+    .nav-header, .link, .link-1 {
+      display: none;
+    }
+
+    .ip-nav {
+      height: 25px ;
+      border-radius: 5px;
+    }
+}
+
+.nav-img {
+    width: 30%;
+    display: flex;
+    justify-content: left;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.link {
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.link-1 {
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #F97525;
+}
+.nav-mobile {
+    display: flex;
+}
+.search-bar {
+    padding-left: 20px;
+}

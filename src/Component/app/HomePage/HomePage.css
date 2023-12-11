@@ -1,0 +1,329 @@
+/* Hiển thị trên màn hình máy tính */
+    .home-header, .home-introduce-1{
+      display: flex;
+      align-items: center; /* Giữa các thành phần theo chiều dọc */
+    }
+    .home-introduce-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home-header-left {
+        width: 50%;
+    }
+
+    input::placeholder {
+        visibility: hidden;
+    }
+
+    .home-button-1 {
+        background-color: #FA541C;
+        border-radius: 5px;
+        height: 32px;
+        border: none;
+    }
+
+    .home-introduce-1-left {
+        width: 100%;
+        padding-right: 80px;
+    }
+    .home-header {
+        margin: 0 50px;
+    }
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .home-input {
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+    
+    .home-introduce {
+        margin: 50px 50px;
+    }
+    
+    .home-introduce-1-right {
+        box-sizing: border-box;
+    }
+    .introduce-content {
+        background-color: antiquewhite;
+        border: 1px solid black;
+        width: 30%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #cccccc;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+    
+    .introduce-content-img {
+        max-width: 100%;
+        height: 200px;
+        margin: 20px;
+        box-sizing: border-box;
+    }
+
+.eco {
+    margin: 0 50px;
+}
+.eco-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eco-2 {
+    display: flex;
+    align-items: center;
+}
+.eco-title{
+    width: 40%;
+    height: auto;
+}
+.eco-img {
+    width: 60%;
+    overflow: hidden;
+
+}
+.line-home {
+    height: 100%;
+    border-right: 1px solid #ccc;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+.xemthem1{
+    display: none;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.blog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-title-left {
+    width: 30%;
+    text-align: left;
+}
+.img-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "box1 box1 box2 box3"
+    "box1 box1 box4 box5"
+}
+#box1 {
+    grid-area: box1;
+
+}
+#box2 {
+    grid-area: box2;
+    margin-left: 30px;
+}
+#box3 {
+    grid-area: box3;
+    margin-left: 30px;
+}
+#box4 {
+    grid-area: box4;
+    margin-left: 30px;
+}
+#box5 {
+    grid-area: box5;
+    margin-left: 30px;
+}
+
+.imgBlog1 {
+    filter: brightness(0.5);
+    border-radius: 10px;
+    width: 100%;
+}
+.text-blog1 {
+
+}
+.box {
+    position: relative;
+}
+
+.imgBlog1 {
+    filter: brightness(0.5);
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của box */
+    display: block;
+}
+
+.text-blog1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    color: white;
+    box-sizing: border-box; /* Đảm bảo padding không tăng kích thước thực sự của phần tử */
+    width: 100%; /* Đảm bảo văn bản chiếm toàn bộ chiều rộng của box */
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ trắng để văn bản dễ đọc */
+}
+.text-blog1 p {
+    text-align: left;
+    margin: 0; /* Loại bỏ margin mặc định của đoạn văn bản */
+}
+.text-blog1 h1 {
+    text-align: left;
+}
+
+.imgBlog2 {
+    width: 100%;
+    border-radius: 10px;
+}
+.text-blog2 p, h3{
+    text-align: left;
+}
+
+.imgBlog3 {
+    width: 100%;
+    border-radius: 10px;
+}
+.text-blog3 p, h3{
+    text-align: left;
+}
+
+.imgBlog4 {
+    width: 100%;
+    border-radius: 10px;
+}
+.text-blog4 p, h3{
+    text-align: left;
+}
+
+.imgBlog5 {
+    width: 100%;
+    border-radius: 10px;
+}
+.text-blog5 p, h3{
+    text-align: left;
+}
+.partner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item {
+    width: 300px;
+    height: 150px; 
+    margin: 10px; 
+}
+
+
+.contact {
+    display: flex;
+    margin: 50px;
+    padding: 50px 100px;
+    background-image: url(../../Image/OVERLAY.png);
+    height: auto;
+}
+.title-contact h1, p{
+    text-align: left;
+}
+.ip {
+    width: 70%;
+    margin: 0 30px 0 200px;
+}
+.ip input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #2f2b2b;
+
+}
+.ip button {
+    width: 150px;
+    height: 40px;
+    background-color: #0DC5AE;
+    border-radius: 10px;
+}
+.icon-contact {
+    display: grid;
+}
+
+
+
+/* Hiển thị trên màn hình điện thoại */
+@media (max-width: 740px) {
+    .home-header, .home-introduce-1, .home-introduce-content {
+      flex-direction: column; /* Hiển thị các thành phần theo chiều dọc */
+   }
+   .home-header-left {
+        width: 100%;
+        margin-right: 20px;
+    }
+   .form {
+        flex-direction: column;
+        width: 100%;
+    }
+    input::placeholder {
+        color: #999; /* Màu của placeholder */
+    }
+    .home-button-1 {
+        width: 100%;
+        height: 32px;
+        margin-top: 10px;
+    }
+
+    .home-introduce-1-left {
+        width: 100%;
+        padding: 0;
+    }
+    .home-introduce-1-right {
+        width: 100%;
+    }
+    .home-img-1 {
+        width: 100%;
+        height: auto;
+    }
+    .home-img-2, .home-img-3 {
+        width: 100%;
+        height: auto;
+    }
+    /* .home-img-3 {
+        width: 100%;
+    } */
+    .introduce-content {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .eco-1 {
+        flex-direction: column;
+    }
+    .eco-2{
+        flex-direction: column;
+    }
+    .xemthem {
+        display: none;
+    }
+    .xemthem1{
+        width: 100%;
+        display: inline;
+    }
+    .eco-title{
+        width: 100%;
+    }
+    .eco-img {
+        width: 100%;
+        overflow: hidden;
+    
+    }
+
+}
+
