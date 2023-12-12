@@ -9,9 +9,13 @@ const Nav = () => {
     const location = useLocation();
 
     const [isSearch, setIsSearch] = useState(false);
+    const [isBar, setIsBar] = useState(false);
 
     const handleSearch = () => {
         setIsSearch(!isSearch)
+    }
+    const handleBar = () => {
+        setIsBar(!isBar)
     }
 
     return (
@@ -42,13 +46,35 @@ const Nav = () => {
 
                 </div>
                 <div className="nav-mobile">
+                    {isBar &&
+                        <div className="mobile-nav-bar">
+                            <Link to= "/" className={location.pathname === '/' ? 'link-1-bar' : 'link-bar'}>
+                                Trang chủ
+                            </Link>
+                            <Link to="/about" className={location.pathname === '/about' ? 'link-1-bar' : 'link-bar'}>
+                                Về chúng tôi
+                            </Link>
+                            <Link to = "/product" className={location.pathname === '/product' ? 'link-1-bar' : 'link-bar'}>
+                                Sản phẩm và dịch vụ
+                            </Link>
+                            <Link to = "/news" className={location.pathname === '/news' ? 'link-1-bar' : 'link-bar'}>
+                                Tin tức
+                            </Link>
+                            <Link to= "/experience" className={location.pathname === '/experience' ? 'link-1-bar' : 'link-bar'}>
+                                Trải nghiệm
+                            </Link>
+                            <Link to = "/contact" className={location.pathname === '/contact' ? 'link-1-bar' : 'link-bar'}>
+                                Liên hệ
+                            </Link>
+                        </div>
+                    }
                     
                     {isSearch ?
                         <div>
                             <input className="ip-nav"/>
                         </div>
                     :
-                        <div className="menu-icon">
+                        <div className="menu-icon" onClick={handleBar}>
                             <FontAwesomeIcon icon={faBars} className="icon-nav" />
                         </div>
                     }

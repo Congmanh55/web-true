@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Nav/>
-        {/* <RouterNav/> */}
-        <About/>
+        <RouterNav/>
+        {/* <About/> */}
         {/* <Product/> */}
         <Footer/>
       </div>

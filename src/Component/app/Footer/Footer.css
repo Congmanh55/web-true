@@ -1,0 +1,144 @@
+
+.footer {
+    display: grid;
+    text-align: left;
+    grid-template-areas: 
+    "box1 box1 box6 box7"
+    "box2 box2 box6 box7"
+    "box3 box3 box6 box7"
+    "box4 box4 box6 box7"
+    "box5 box5 box8 box9"
+}
+
+.footer-1 {
+    grid-area: box1;
+}
+.footer-2 {
+    grid-area: box2;
+}
+.footer-3 {
+    grid-area: box3;
+}
+.footer-4 {
+    grid-area: box4;
+}
+.footer-5 {
+    grid-area: box5;
+    display: flex;
+    align-items: center;
+    color: #c4c4c4;
+}
+.footer-6 {
+    grid-area: box6;
+}
+.footer-7 {
+    grid-area: box7;
+}
+.footer-8 {
+    grid-area: box8;
+}
+.footer-8 img{
+    margin: 0 10px;
+}
+.footer-9 {
+    grid-area: box9;
+    display: flex;
+    align-items: center;
+}
+.footer-9 input {
+    height: 30px;
+    border-radius: 5px;
+
+}
+.footer-9 button {
+    height: 35px;
+    width: 35px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #0DC5AE;
+    color: white;
+}
+
+@media (max-width: 740px) {
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        grid-template-areas: 
+        "box1"
+        "box3"
+        "box2"
+        "box8"
+        "box4"
+        "box9"
+        "box5"
+        "box6"
+        "box7"
+    }
+
+    .footer-1 {
+        grid-area: box1;
+    }
+    .footer-2 {
+        grid-area: box2;
+    }
+    .footer-3 {
+        grid-area: box3;
+        text-align: left;
+    }
+    .footer-4 {
+        grid-area: box4;
+    }
+    .footer-5 {
+        margin-top: 20px;
+        grid-area: box5;
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+    .footer-6 {
+        grid-area: box6;
+        color: #c4c4c4;
+    }
+    .footer-6 p {
+        text-align: center;
+        margin: 0;
+    }
+    .footer-7 {
+        grid-area: box7;
+        color: #c4c4c4;
+    }
+    .footer-7 p {
+        text-align: center;
+        margin: 0;
+    }
+    .footer-8 {
+        grid-area: box8;
+    }
+    .footer-8 img{
+        margin: 0 10px;
+    }
+    .footer-9 {
+        grid-area: box9;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-9 input {
+        height: 30px;
+        border-radius: 5px;
+        width: 90%;
+
+    }
+    .footer-9 button {
+        height: 35px;
+        width: 35px;
+        margin: 0 10px;
+        border-radius: 5px;
+        background-color: #0DC5AE;
+        color: white;
+    }
+    .fff {
+        display: none;
+    }
+}
